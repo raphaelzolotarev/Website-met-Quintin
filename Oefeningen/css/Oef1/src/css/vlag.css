@@ -1,0 +1,26 @@
+div{
+    height: 100px;
+    margin: 5px;
+    border: 2px dotted black;
+    display: flex;    
+    justify-content: space-between;
+}
+
+div > div{
+    width: 33%;
+    height: 100px;
+    float: left;
+    margin: 0;
+    border: none;
+}
+
+div > div:nth-child(1n){
+    background: black;
+}
+
+div > div:nth-child(2n){
+    background: yellow;
+}
+div > div:nth-child(3n){
+    background: red;
+}
