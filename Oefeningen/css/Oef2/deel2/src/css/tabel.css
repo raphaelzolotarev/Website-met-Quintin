@@ -1,0 +1,12 @@
+tr:first-child th:first-child{
+    border-bottom: 10px solid black;
+}
+tr:nth-child(2) th{
+    border-bottom: 1px solid black;
+}
+table{
+    border-bottom: 10px solid black;
+}
+tr:last-child th:first-child, tr:last-child th:nth-child(3){
+    text-align: left;
+}

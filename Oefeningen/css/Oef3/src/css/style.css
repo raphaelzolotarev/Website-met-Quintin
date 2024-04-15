@@ -1,0 +1,71 @@
+body{
+    padding: 20px;
+    background-color: #fffee0;
+}
+#container{
+    margin: 0 auto;
+    width: 90%;
+    align-self: center;
+}
+ul{
+    list-style-image: url("../img/listIcon.png");
+}
+a{
+    color: red;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+}
+section{
+    border-top: 2px dotted orange;
+    border-bottom: 2px dotted orange;
+    text-align: center;
+    padding: 20px;
+}
+article{
+    border: 2px solid red;
+    border-radius: 50px 0 50px 0;
+    padding: 10px;
+    background: rgba(255,165,0,.75);
+    text-align: left;
+}
+footer{
+    text-align: center;
+}
+#spiderman{
+    background-color: yellow;
+}
+#ironman{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 100;
+}
+span.superhelden{
+    font-style: italic;
+    color: red;
+    font-weight: bolder;
+}
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#article-img-home{
+    float: right;
+    width: 200px;
+    opacity: 75%;
+}
+.article-img{
+    margin: 20px;
+    float: left;
+    width: 200px;
+    opacity: 75%;
+}
+#wavy{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+#geek-media{
+    border-bottom: 2px dotted black;
+}
