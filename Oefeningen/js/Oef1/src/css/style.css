@@ -1,0 +1,17 @@
+strong{
+    border-bottom: 2px solid black;
+}
+
+#number_of_duos{
+    font-weight: bold;
+    background-color: rebeccapurple;
+    padding: 5px;
+    color: white;
+}
+#number_of_duos span{
+    font-weight: bold;
+    color: red;
+}
+button{
+    background-color: greenyellow;
+}
