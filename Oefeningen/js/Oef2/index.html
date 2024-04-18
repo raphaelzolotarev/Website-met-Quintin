@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hier is mijn JS #2 oefening bij Intec waarvan ik de menu van een restaurant hebt gedaan met html, css en js">
+    <meta name="keywords" content="css, krokantje, intec">
+    <meta name="author" content="Raphael">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Krokantje</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <!---HEADER-->
+        <header>
+            <h1>Resto 'Het Krokantje'</h1>
+        </header>
+
+        <!---SECTION-->
+        <section id="beschrijving">
+            <div>
+                <img src="src/media/Foto1.jpg">                   
+            </div>    
+            <div id="product-description">
+                <h4><span>Naam :</span></h4>  
+                <p>Lolly</p> 
+
+                <h4><span>Prijs :</span></h4>  
+                <p>2.99</p>   
+
+                <h4><span>Beschrijven :</span></h4>  
+                <p>Een lolly met inhoud, een vleugje notalgie</p>               
+            </div>    
+        </section>  
+
+        <!---SECTION-->
+        <section id="menu"> 
+            <div>
+                <h4>Gang :</h4>  
+                <select name="gang" id="gang">
+                    <option value="Voorgerechten">Voorgerechten</option>
+                    <option value="Hoofdgerechten">Hoofdgerechten</option>
+                    <option value="Desserts">Desserts</option>
+                  </select>
+
+                <h4>Keuze :</h4>  
+                <select name="keuze" id="keuze" size="8">
+                    <option value="Sprinkhaan">Sprinkhaan</option>
+                    <option value="Hoofdgerechten">Tandoori Burger</option>
+                    <option value="Desserts">Cupcake</option>
+                    
+                    <option value="Sushi">Sushi</option>
+                    <option value="Insect Burger">Insect Burger</option>
+                    <option value="Salade">Salade</option>
+                    
+                    <option value="Lolly">Lolly</option>
+                    <option value="Ijsje">Ijsje</option>                    
+                  </select> 
+
+                <h4>Aantaal person :</h4>           
+            </div>          
+        </section>  
+
+        <!---SECTION-->
+        <section id="bestelling">  
+            <div>
+                <h2>Uw Bestellingen :</h2>          
+            </div>            
+        </section>  
+
+    </div>
+</body>
+<script src="src/js/script.js"></script>
+</html>

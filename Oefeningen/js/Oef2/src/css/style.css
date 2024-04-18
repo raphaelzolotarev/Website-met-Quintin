@@ -1,0 +1,48 @@
+body{
+    background-color: chartreuse;
+}
+#container{
+    display: flex;
+    flex-direction: column; 
+    justify-content:center; 
+    align-items: center;    
+}
+header{
+    color: darkgreen;
+    width: 100%;
+    text-align: center;
+}
+section{ 
+    border: 5px solid darkgreen;
+    width: 80%;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: bisque;
+}
+section > div{
+    margin: 20px;
+}
+img{
+    width: 500px;
+    max-width: 100%;
+}
+#beschrijving > div{
+    float: left;
+}
+#beschrijving:nth-child(1){
+    margin: 20px;
+}
+
+#beschrijving > div > h4 > span{
+    border-bottom: 2px solid black;
+}
+#product-description >  p:nth-child(2){
+    color: orange;
+    font-size: 18px;
+    font-weight: 800;
+}
+#keuze{
+    height: 100px;
+}
