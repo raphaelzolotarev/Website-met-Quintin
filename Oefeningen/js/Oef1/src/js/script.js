@@ -6,6 +6,7 @@ let highestDiceNumber = 6;
 let worpen = 0;
 let objDiceOccurenceCounter;
 let  objStats = {
+        eengelijk:0,
         dubbel:0,
         drievoudig:0,
         viervoudig:0,
@@ -102,15 +103,15 @@ let audio = new Audio('src/media/dices.mp3');
             //CLEAR
             statsDom.innerHTML = "";  
             //ADD           
-            for(let i = 1; i<numberOfDices; ++i){
-                statsDom.innerHTML += '<tr><td>Max ' + (i + 1) + ' gelijke: </td><td>0</td></tr>';
+            for(let i = 1; i<=numberOfDices; ++i){
+                statsDom.innerHTML += '<tr><td>Max ' + i + ' gelijke: </td><td>0</td></tr>';
             }
         } else{
             //CLEAR
             statsDom.innerHTML = "";  
             //ADD  
             for(k in objStats){ 
-                statsDom.innerHTML += '<tr><td>Max ' + (objStatsKeys.indexOf(k)+2) + ' gelijke: </td><td>'+objStats[k]+'</td></tr>';
+                statsDom.innerHTML += '<tr><td>Max ' + (objStatsKeys.indexOf(k)+1) + ' gelijke: </td><td>'+objStats[k]+'</td></tr>';
             }
         }
     }
@@ -149,6 +150,7 @@ let audio = new Audio('src/media/dices.mp3');
             6:0
         };    
         lastLaunch = {
+            eengelijk:0,
             dubbel:0,
             drievoudig:0,
             viervoudig:0,
@@ -164,17 +166,32 @@ let audio = new Audio('src/media/dices.mp3');
                 case 6: ++objDiceOccurenceCounter[6]; break;
             } 
         }
-        for(k in objDiceOccurenceCounter){
+        for(k in objDiceOccurenceCounter){                   
             switch(objDiceOccurenceCounter[k]){
                 case 2: ++objStats.dubbel;         ++lastLaunch.dubbel;          break;
                 case 3: ++objStats.drievoudig;     ++lastLaunch.drievoudig;      break;
                 case 4: ++objStats.viervoudig;     ++lastLaunch.viervoudig;      break;
                 case 5: ++objStats.vijfvoudig;     ++lastLaunch.vijfvoudig;      break;
-            } 
+            }             
+        }
+        
+        if(noMatch()){
+            ++objStats.eengelijk;         
+            ++lastLaunch.eengelijk;
         }
 
     } 
 
+
+    //NO MATCH
+    function noMatch(){
+        for(k in lastLaunch){
+            if(lastLaunch[k]!=0){
+                return false;
+            } 
+        }
+        return true;
+    }
 
 
     //INFO
