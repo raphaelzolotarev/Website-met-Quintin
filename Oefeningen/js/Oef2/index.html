@@ -16,62 +16,61 @@
 
         <!---HEADER-->
         <header>
-            <h1>Resto 'Het Krokantje'</h1>
+            <h1>RESTAURANT HET KROKANTJE</h1>
         </header>
 
         <!---SECTION-->
         <section id="beschrijving">
-            <div>
-                <img src="src/media/Foto1.jpg">                   
-            </div>    
-            <div id="product-description">
-                <h4><span>Naam :</span></h4>  
-                <p>Lolly</p> 
-
-                <h4><span>Prijs :</span></h4>  
-                <p>2.99</p>   
-
-                <h4><span>Beschrijven :</span></h4>  
-                <p>Een lolly met inhoud, een vleugje notalgie</p>               
-            </div>    
+            <div>   
+                <video autoplay loop muted>                    
+                    <source src="src/media/videonosound.mp4" type="video/mp4">
+                </video>               
+            </div>  
         </section>  
 
         <!---SECTION-->
         <section id="menu"> 
-            <div>
-                <h4>Gang :</h4>  
+            
+            <div class="options">
+                <h4>GANG </h4>  
                 <select name="gang" id="gang">
                     <option value="Voorgerechten">Voorgerechten</option>
                     <option value="Hoofdgerechten">Hoofdgerechten</option>
                     <option value="Desserts">Desserts</option>
-                  </select>
+                  </select>       
+            </div> 
 
-                <h4>Keuze :</h4>  
-                <select name="keuze" id="keuze" size="8">
+            <div class="options">
+                <h4>KEUZE </h4>  
+                <select name="keuze" id="keuze" size="8">                        
                     <option value="Sprinkhaan">Sprinkhaan</option>
-                    <option value="Hoofdgerechten">Tandoori Burger</option>
-                    <option value="Desserts">Cupcake</option>
-                    
-                    <option value="Sushi">Sushi</option>
-                    <option value="Insect Burger">Insect Burger</option>
-                    <option value="Salade">Salade</option>
-                    
-                    <option value="Lolly">Lolly</option>
-                    <option value="Ijsje">Ijsje</option>                    
-                  </select> 
+                    <option value="Tandoori Burger">Tandoori Burger</option>
+                    <option value="Cupcake">Cupcake</option>                
+                </select>    
+            </div>  
 
-                <h4>Aantaal person :</h4>           
-            </div>          
+            <div class="options">
+                <h4>AANTAAL &nbsp;</h4>   
+                <input name="aantaal" id="aantaal" type="number" value="0" min="0" max="10">         
+            </div>   
+            
+            <div class="options">
+                <input type="submit" id="order-button" value="BESTEL">
+            </div> 
         </section>  
 
         <!---SECTION-->
-        <section id="bestelling">  
-            <div>
-                <h2>Uw Bestellingen :</h2>          
-            </div>            
+        <section id="bestelling">               
         </section>  
 
+         
+        <!--Footer-->
+        <footer>
+            <img src="src/media/home.png" id="homeicone">
+            <img src="src/media/pause.png" id="audioicone"> 
+        </footer>
+ 
     </div>
 </body>
-<script src="src/js/script.js"></script>
+<script src="src/js/script.js"></script>   
 </html>
